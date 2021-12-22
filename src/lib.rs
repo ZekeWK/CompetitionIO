@@ -1,7 +1,19 @@
+mod input;
+
 #[cfg(test)]
 mod tests {
+    use crate::input::*;
+
     #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
+    fn next_test() {
+        let mut input = input_new();
+
+        let x : u64 = input.next();
+        let y : i32 = input.next();
+        let s : String = input.next();
+
+        println!("X : {}", x);
+        println!("Y : {}", y);
+        println!("S : {}", s);
     }
 }

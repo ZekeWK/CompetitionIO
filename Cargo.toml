@@ -1,5 +1,5 @@
 [package]
-name = "CompetitionIO"
+name = "competition_io"
 version = "0.1.0"
 authors = ["ag23680"]
 edition = "2018"
