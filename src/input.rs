@@ -29,4 +29,17 @@ impl <I> Input<I> where I : Iterator<Item = char> {
 
         val
     }
+
+    pub fn next_char(&mut self) -> char {
+        self.input.next().unwrap()
+    }
+
+    pub fn next_char_WSF(&mut self) -> char { //WSF = Whitespace free
+        let mut c = char::default();
+        loop {
+            c = self.input.next().unwrap();
+            if !c.is_whitespace() {break;}
+        }
+        c
+    }
 }
