@@ -1,4 +1,5 @@
-mod input;
+pub mod input;
+pub use input::*;
 
 #[cfg(test)]
 mod tests {
