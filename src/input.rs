@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 use std::io::{stdin, BufReader, Read};
 use std::str::FromStr;
 
@@ -34,7 +35,7 @@ impl <I> Input<I> where I : Iterator<Item = char> {
         self.input.next().unwrap()
     }
 
-    pub fn next_char_WSF(&mut self) -> char { //WSF = Whitespace free
+    pub fn next_char_wsf(&mut self) -> char { //WSF = Whitespace free
         loop {
             let c = self.input.next().unwrap();
             if !c.is_whitespace() {break c;}
